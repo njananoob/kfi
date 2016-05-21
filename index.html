@@ -1,659 +1,413 @@
-<!--
-Author: W3layouts
-Author URL: http://w3layouts.com
-License: Creative Commons Attribution 3.0 Unported
-License URL: http://creativecommons.org/licenses/by/3.0/
--->
-<!DOCTYPE HTML>
-<html>
-	<head>
-		<title>Umbrella Bootstrap Website Template | Home :: w3layouts</title>
-		<link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
-		<link rel="shortcut icon" href="images/fav.png" />	
-		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-		<script src="js/jquery.min.js"></script>
-		 <!---- start-smoth-scrolling---->
-		<script type="text/javascript" src="js/move-top.js"></script>
-		<script type="text/javascript" src="js/easing.js"></script>
-		<script type="text/javascript">
-			jQuery(document).ready(function($) {
-				$(".scroll").click(function(event){		
-					event.preventDefault();
-					$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
-				});
-			});
-		</script>
-		 <!-- Custom Theme files -->
-		<link href="css/style.css" rel='stylesheet' type='text/css' />
-   		 <!-- Custom Theme files -->
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
-		</script>
-		<!----webfonts---->
-		<link href='//fonts.googleapis.com/css?family=Open+Sans:400,300,600,800,700' rel='stylesheet' type='text/css'>
-		<!----//webfonts---->
-		<!----start-top-nav-script---->
-		<script>
-			$(function() {
-				var pull 		= $('#pull');
-					menu 		= $('nav ul');
-					menuHeight	= menu.height();
-				$(pull).on('click', function(e) {
-					e.preventDefault();
-					menu.slideToggle();
-				});
-				$(window).resize(function(){
-	        		var w = $(window).width();
-	        		if(w > 320 && menu.is(':hidden')) {
-	        			menu.removeAttr('style');
-	        		}
-	    		});
-			});
-		</script>
-		<!----//End-top-nav-script---->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>KFI - Study Center</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/grayscale.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
 </head>
-	<body>
-		<!-----start-container----->
-		<!-----header-section------>
-		<div class="header-section">
-			<!----- start-header---->
-			<div id="home" class="header">
-				<div class="container">
-					<div class="top-header">
-						<div class="logo">
-							<a href="#"><img src="images/logo.png" title="logo" /></a>
-						</div>
-						<!----start-top-nav---->
-						 <nav class="top-nav">
-							<ul class="top-nav">
-								<li class="active"><a href="#home" class="scroll">Home </a></li>
-								<li class="page-scroll"><a href="#fea" class="scroll">FEATURES</a></li>
-								<li class="page-scroll"><a href="#gallery" class="scroll">Gallery</a></li>
-								<li class="page-scroll"><a href="#about" class="scroll">About </a></li>
-								<li class="contatct-active" class="page-scroll"><a href="#contact" class="scroll">Contact</a></li>
-							</ul>
-							<a href="#" id="pull"><img src="images/nav-icon.png" title="menu" /></a>
-						</nav>
-						<div class="clearfix"> </div>
-					</div>
-				</div>
-			</div>
-			<!----- //End-header---->
-			<!----- start-slider---->
-			<!----start-slider-script---->
-			<script src="js/responsiveslides.min.js"></script>
-			 <script>
-			    // You can also use "$(window).load(function() {"
-			    $(function () {
-			      // Slideshow 4
-			      $("#slider4").responsiveSlides({
-			        auto: true,
-			        pager: true,
-			        nav: true,
-			        speed: 500,
-			        namespace: "callbacks",
-			        before: function () {
-			          $('.events').append("<li>before event fired.</li>");
-			        },
-			        after: function () {
-			          $('.events').append("<li>after event fired.</li>");
-			        }
-			      });
-			
-			    });
-			  </script>
-			<!----//End-slider-script---->
-			<!-- Slideshow 4 -->
-			    <div  id="top" class="callbacks_container">
-			      <ul class="rslides" id="slider4">
-			        <li>
-			          <img src="images/slide.jpg" alt="">
-			          <div class="caption text-center">
-			          	<div class="slide-text-info">
-			          		<h1>Introducing <span>Umbrella.</span></h1>
-			          		<h2>Made to modify and use anywhere</h2>
-			          		<div class="slide-text">
-			          			<ul>
-			          				<li><span> </span>Sed ut perspiciatis unde omnis </li>
-			          				<li><span> </span>Iste natus error sit voluptatem accusantium </li>
-			          				<li><span> </span>doloremque laudantium</li>
-			          			</ul>
-			          		</div>
-			          		<div class="clearfix"> </div>
-			          		<div class="big-btns">
-			          			<a class="download" href="#"><label> </label>Download</a>
-			          			<a class="view" href="#"><label> </label>Vew Gallery</a>
-			          		</div>
-			          	</div>
-			          </div>
-			        </li>
-			        <li>
-			          <img src="images/slide.jpg" alt="">
-			          <div class="caption text-center">
-			          	<div class="slide-text-info">
-			          		<h1>Introducing <span>Amazing app.</span></h1>
-			          		<h2>Made to modify and use anywhere</h2>
-			          		<div class="slide-text">
-			          			<ul>
-			          				<li><span> </span>Sed ut perspiciatis unde omnis </li>
-			          				<li><span> </span>Iste natus error sit voluptatem accusantium </li>
-			          				<li><span> </span>doloremque laudantium</li>
-			          			</ul>
-			          		</div>
-			          		<div class="clearfix"> </div>
-			          		<div class="big-btns">
-			          			<a class="download" href="#"><label> </label>Download</a>
-			          			<a class="view" href="#"><label> </label>Vew Gallery</a>
-			          		</div>
-			          	</div>
-			          </div>
-			        </li>
-			        <li>
-			          <img src="images/slide.jpg" alt="">
-			          <div class="caption text-center">
-			          	<div class="slide-text-info">
-			          		<h1>Introducing <span>Best app.</span></h1>
-			          		<h2>Made to modify and use anywhere</h2>
-			          		<div class="slide-text">
-			          			<ul>
-			          				<li><span> </span>Sed ut perspiciatis unde omnis </li>
-			          				<li><span> </span>Iste natus error sit voluptatem accusantium </li>
-			          				<li><span> </span>doloremque laudantium</li>
-			          			</ul>
-			          		</div>
-			          		<div class="clearfix"> </div>
-			          		<div class="big-btns">
-			          			<a class="download" href="#"><label> </label>Download</a>
-			          			<a class="view" href="#"><label> </label>Vew Gallery</a>
-			          		</div>
-			          	</div>
-			          </div>
-			        </li>
-			        <li>
-			          <img src="images/slide.jpg" alt="">
-			           <div class="caption text-center">
-			           <div class="slide-text-info">
-			          		<h1>Introducing <span>Amazing app.</span></h1>
-			          		<h2>Made to modify and use anywhere</h2>
-			          		<div class="slide-text">
-			          			<ul>
-			          				<li><span> </span>Sed ut perspiciatis unde omnis </li>
-			          				<li><span> </span>Iste natus error sit voluptatem accusantium </li>
-			          				<li><span> </span>doloremque laudantium</li>
-			          			</ul>
-			          		</div>
-			          		<div class="clearfix"> </div>
-			          		<div class="big-btns">
-			          				<a class="download" href="#"><label> </label>Download</a>
-			          				<a class="view" href="#"><label> </label>Vew Gallery</a>
-			          		</div>
-			          	</div>
-			          </div>
-			        </li>
-			      </ul>
-			    </div>
-			    <div class="clearfix"> </div>
-			    <!-----divice----->
-			    	<div class="divice-demo">
-			    		<img src="images/divice-in-hand.png" title="demo" />
-			    	</div>
-			    <!---//divice----->
-			<!----- //End-slider---->
-			</div>
-			<!-----//header-section----->
-			<!----features----->
-			<div id="fea" class="features">
-				<div class="container">
-					<div class="section-head text-center">
-						<h3><span class="frist"> </span>AMAZING FEATURES<span class="second"> </span></h3>
-						<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta.</p>
-					</div>
-					<!----features-grids----->
-					<div class="features-grids">
-						<div class="col-md-4 features-grid">
-							<div class="features-grid-info">
-								<div class="col-md-2 features-icon">
-									<span class="f-icon0"> </span>
-								</div>
-								<div class="col-md-10 features-info">
-									<h4>Accusan timar</h4>
-									<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.</p>
-								</div>
-								<div class="clearfix"> </div>
-							</div>
-							<div class="features-grid-info">
-								<div class="col-md-2 features-icon">
-									<span class="f-icon1"> </span>
-								</div>
-								<div class="col-md-10 features-info">
-									<h4>Accusan timar</h4>
-									<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.</p>
-								</div>
-								<div class="clearfix"> </div>
-							</div>
-							<div class="features-grid-info">
-								<div class="col-md-2 features-icon">
-									<span class="f-icon2"> </span>
-								</div>
-								<div class="col-md-10 features-info">
-									<h4>Accusan timar</h4>
-									<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.</p>
-								</div>
-								<div class="clearfix"> </div>
-							</div>
-							
-						</div><!---end-features-grid---->
-						<div class="col-md-4 features-grid">
-							<div class="big-divice">
-								<img src="images/divice.png" title="features-demo" />
-							</div>
-						</div><!---end-features-grid---->
-						<div class="col-md-4 features-grid">
-							<div class="features-grid-info">
-								<div class="col-md-2 features-icon1">
-									<span class="f-icon3"> </span>
-								</div>
-								<div class="col-md-10 features-info">
-									<h4>Accusan timar</h4>
-									<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.</p>
-								</div>
-								<div class="clearfix"> </div>
-							</div>
-							<div class="features-grid-info">
-								<div class="col-md-2 features-icon1">
-									<span class="f-icon4"> </span>
-								</div>
-								<div class="col-md-10 features-info">
-									<h4>Accusan timar</h4>
-									<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.</p>
-								</div>
-								<div class="clearfix"> </div>
-							</div>
-							<div class="features-grid-info">
-								<div class="col-md-2 features-icon1">
-									<span class="f-icon5"> </span>
-								</div>
-								<div class="col-md-10 features-info">
-									<h4>Accusan timar</h4>
-									<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.</p>
-								</div>
-								<div class="clearfix"> </div>
-							</div>
-							
-						</div><!---end-features-grid---->
-						<div class="clearfix"> </div>
-					</div>
-				</div>
-					<!----//features-grids----->
-					<!----//features----->
-					<!----screen-shot-gallery---->
-					<div id="gallery" class="screen-shot-gallery">
-						<div class="container">
-							<div class="section-head text-center">
-								<h3><span class="frist"> </span>SCREENSHOTS GALLERY<span class="second"> </span></h3>
-								<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta.</p>
-							</div>
-						</div>
-						<!----sreen-gallery-cursual---->
-						<div class="sreen-gallery-cursual">
-							 <!-- requried-jsfiles-for owl -->
-							<link href="css/owl.carousel.css" rel="stylesheet">
-							    <script src="js/owl.carousel.js"></script>
-							        <script>
-							    $(document).ready(function() {
-							      $("#owl-demo").owlCarousel({
-							        items : 3,
-							        lazyLoad : true,
-							        autoPlay : true,
-							      });
-							    });
-							    </script>
-							 <!-- //requried-jsfiles-for owl -->
-							 <!-- start content_slider -->
-							 <div class="container">
-						       <div id="owl-demo" class="owl-carousel">
-					                <div class="item">
-					                	<img class="lazyOwl" data-src="images/screen.png" alt="screen-name">
-					                </div>
-					                <div class="item">
-					                	<img class="lazyOwl" data-src="images/screen.png" alt="screen-name">
-					                </div>
-					                <div class="item">
-					                	<img class="lazyOwl" data-src="images/screen.png" alt="screen-name">
-					                </div>
-					                <div class="item">
-					                	<img class="lazyOwl" data-src="images/screen.png" alt="screen-name">
-					                </div>
-					                <div class="item">
-					                	<img class="lazyOwl" data-src="images/screen.png" alt="screen-name">
-					                </div>
-					                <div class="item">
-					                	<img class="lazyOwl" data-src="images/screen.png" alt="screen-name">
-					                </div>
-					                <div class="item">
-					                	<img class="lazyOwl" data-src="images/screen.png" alt="screen-name">
-					                </div>
-					                <div class="item">
-					                	<img class="lazyOwl" data-src="images/screen.png" alt="screen-name">
-					                </div>
-				              </div>
-						</div>
-						<!--//sreen-gallery-cursual---->
-					</div>
-				</div>
-				<!--//screen-shot-gallery---->
-				<!---- show-reel ---->
-				<!---pop-up-box---->
-					<link href="css/popuo-box.css" rel="stylesheet" type="text/css" media="all"/>
-					<script src="js/jquery.magnific-popup.js" type="text/javascript"></script>
-					<!---//pop-up-box---->
-				<div class="show-reel text-center">
-					<div class="container">
-						<h5>SHOW  <a class="popup-with-zoom-anim" href="#small-dialog"><span> </span></a> REEL</h5>
-						<div id="small-dialog" class="mfp-hide">
-						<iframe src="//player.vimeo.com/video/38584262" width="100%" height="400" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen> </iframe>
-					</div>
-					 <script>
-							$(document).ready(function() {
-							$('.popup-with-zoom-anim').magnificPopup({
-								type: 'inline',
-								fixedContentPos: false,
-								fixedBgPos: true,
-								overflowY: 'auto',
-								closeBtnInside: true,
-								preloader: false,
-								midClick: true,
-								removalDelay: 300,
-								mainClass: 'my-mfp-zoom-in'
-							});
-																							
-							});
-					</script>	
-					</div>
-				</div>
-				<!---- //show-reel ---->
-				<!----team---->
-				<div id="about" class="team">
-					<div class="container">
-						<div class="section-head text-center">
-							<h3><span class="frist"> </span>PEOPLE BEHIND THE APP<span class="second"> </span></h3>
-							<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta.</p>
-						</div>
-					</div>
-					<!----team-members---->
-					<div class="team-members">
-						<div class="container">
-							<div class="col-md-3 team-member">
-								<div class="team-member-info">
-									<img class="member-pic" src="images/team-member4.jpg" title="name" />
-									<h5><a href="#">Jonh Doe eh</a></h5>
-									<span>Lead Designer</span>
-									<label class="team-member-caption text-center">
-										<p>sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem.</p>
-										<ul>
-											<li><a class="t-twitter" href="#"><span> </span></a></li>
-											<li><a class="t-facebook" href="#"><span> </span></a></li>
-											<li><a class="t-googleplus" href="#"><span> </span></a></li>
-											<div class="clearfix"> </div>
-										</ul>
-									</label>
-								</div>
-							</div><!--- end-team-member --->
-							<div class="col-md-3 team-member">
-								<div class="team-member-info">
-									<img class="member-pic" src="images/team-member1.jpg" title="name" />
-									<h5><a href="#">Amanda Fenrnicas</a></h5>
-									<span>Lead Developer</span>
-									<label class="team-member-caption text-center">
-										<p>sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem.</p>
-										<ul>
-											<li><a class="t-twitter" href="#"><span> </span></a></li>
-											<li><a class="t-facebook" href="#"><span> </span></a></li>
-											<li><a class="t-googleplus" href="#"><span> </span></a></li>
-											<div class="clearfix"> </div>
-										</ul>
-									</label>
-								</div>
-							</div><!--- end-team-member --->
-							<div class="col-md-3 team-member">
-								<div class="team-member-info">
-									<img class="member-pic" src="images/team-member2.jpg" title="name" />
-									<h5><a href="#">Hamberg Rodny</a></h5>
-									<span>Artist</span>
-									<label class="team-member-caption text-center">
-										<p>sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem.</p>
-										<ul>
-											<li><a class="t-twitter" href="#"><span> </span></a></li>
-											<li><a class="t-facebook" href="#"><span> </span></a></li>
-											<li><a class="t-googleplus" href="#"><span> </span></a></li>
-											<div class="clearfix"> </div>
-										</ul>
-									</label>
-								</div>
-							</div><!--- end-team-member --->
-							<div class="col-md-3 team-member">
-								<div class="team-member-info">
-									<img class="member-pic" src="images/team-member3.jpg" title="name" />
-									<h5><a href="#">Jessica Leonardo</a></h5>
-									<span>Photographer</span>
-									<label class="team-member-caption text-center">
-										<p>sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem.</p>
-										<ul>
-											<li><a class="t-twitter" href="#"><span> </span></a></li>
-											<li><a class="t-facebook" href="#"><span> </span></a></li>
-											<li><a class="t-googleplus" href="#"><span> </span></a></li>
-											<div class="clearfix"> </div>
-										</ul>
-									</label>
-								</div>
-							</div><!--- end-team-member --->
-							<div class="clearfix"> </div>
-						</div>
-							<div class="clearfix"> </div>
-					<!--//team-members---->
-					</div>
-				</div>
-				<!----//team---->
-				<div class="clearfix"> </div>
-				<!----people-says----->
-					<div class="test-monials text-center">
-						<div class="container">
-							<span><img src="images/icon1.png" title="quit"/></span>
-						<script>
-							    $(document).ready(function() {
-							      $("#owl-demo1").owlCarousel({
-							        items : 1,
-							        lazyLoad : true,
-							        autoPlay : true,
-							        itemsDesktop : 2,
-							      });
-							    });
-						 </script>
-						<div id="owl-demo1" class="owl-carousel">
-					       <div class="item">
-					          <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</p>
-					     		<div class="quit-people">
-					     			<img src="images/quit-people.jpg" title="name" />
-					     			<h4><a href="#"> Robert Leonaro</a></h4>
-					     			<span>CEO at CUBEDES</span>
-					     		</div>
-					       </div>
-					        <div class="item">
-					          <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</p>
-					     		<div class="quit-people">
-					     			<img src="images/quit-people.jpg" title="name" />
-					     			<h4><a href="#"> Robert Leonaro</a></h4>
-					     			<span>CEO at CUBEDES</span>
-					     		</div>
-					       </div>
-					        <div class="item">
-					          <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</p>
-					     		<div class="quit-people">
-					     			<img src="images/quit-people.jpg" title="name" />
-					     			<h4><a href="#"> Robert Leonaro</a></h4>
-					     			<span>CEO at CUBEDES</span>
-					     		</div>
-					       </div>
-				         </div>
-				         </div>
-					</div>
-				<!----//people-says----->
-				<!-----FEATURED----->
-				<div class="featured">
-					<div class="section-head text-center">
-						<h3><span class="frist"> </span>FEATURED IN<span class="second"> </span></h3>
-					</div>
-						<script>
-							    $(document).ready(function() {
-							      $("#owl-demo2").owlCarousel({
-							        items : 5,
-							        lazyLoad : true,
-							        autoPlay : true,
-							        pagination : false,
-							      });
-							    });
-						 </script>
-						<div id="owl-demo2" class="owl-carousel">
-					       <div class="item">
-					       		<img src="images/brand-logo1.png" title="the verge" />
-					       </div>
-					       <div class="item">
-					       		<img src="images/brand-logo2.png" title="Mashable" />
-					       </div>
-					       <div class="item">
-					       		<img src="images/brand-logo3.png" title="TNW" />
-					       </div>
-					       <div class="item">
-					       		<img src="images/brand-logo4.png" title="bribble" />
-					       </div>
-					       <div class="item">
-					       		<img src="images/brand-logo1.png" title="the verge" />
-					       </div>
-					       <div class="item">
-					       		<img src="images/brand-logo1.png" title="the verge" />
-					       </div>
-					       <div class="item">
-					       		<img src="images/brand-logo2.png" title="Mashable" />
-					       </div>
-					       <div class="item">
-					       		<img src="images/brand-logo3.png" title="TNW" />
-					       </div>
-					       <div class="item">
-					       		<img src="images/brand-logo4.png" title="bribble" />
-					       </div>
-					       <div class="item">
-					       		<img src="images/brand-logo1.png" title="the verge" />
-					       </div>
-					       <div class="item">
-					       		<img src="images/brand-logo1.png" title="the verge" />
-					       </div>
-					       <div class="item">
-					       		<img src="images/brand-logo2.png" title="Mashable" />
-					       </div>
-					       <div class="item">
-					       		<img src="images/brand-logo3.png" title="TNW" />
-					       </div>
-					       <div class="item">
-					       		<img src="images/brand-logo4.png" title="bribble" />
-					       </div>
-					       <div class="item">
-					       		<img src="images/brand-logo1.png" title="the verge" />
-					       </div>
-						</div>
-			</div>
-			<!-----FEATURED----->
-			<!-----getintouch----->
-			<div id="contact" class="getintouch">
-				<div class="container">
-					<div class="section-head text-center">
-						<h3><span class="frist"> </span>GET IN TOUCH<span class="second"> </span></h3>
-						<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta.</p>
-					</div>
-					<!---->
-					<div class="col-md-9 getintouch-left">
-						<div class="contact-form col-md-10">
-							<h3>Say hello!</h3>
-							<form>
-								<input type="text" placeholder="Name" required />
-								<input type="text"  placeholder="Email" required />
-								<textarea placeholder="Message" required /> </textarea>
-								<input type="submit" value="Send message" />
-							</form>
-						</div>
-						<ul class="footer-social-icons col-md-2 text-center">
-							<li><a class="f-be" href="#"><span> </span></a></li>
-							<li><a class="f-tw" href="#"><span> </span></a></li>
-							<li><a class="f-db" href="#"><span> </span></a></li>
-							<li><a class="f-ti" href="#"><span> </span></a></li>
-							<li><a class="f-go" href="#"><span> </span></a></li>
-							<div class="clearfix"> </div>
-						</ul>
-					</div>
-					<div class="col-md-2 getintouch-left">
-						<div class="footer-divice">
-							<img src="images/divice-half.png" title="getintouch" />
-						</div>
-					</div>	
-				</div>
-			</div>
-			<!---//getintouch----->
-			<!-----footer----->
-			<div class="footer">
-				<div class="container">
-					<div class="footer-grids">
-						<div class="col-md-3 footer-grid about-info">
-							<a href="#"><img src="images/logo.png" title="Umbrella" /></a>
-							<p>eusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-						</div>
-						<div class="col-md-3 footer-grid subscribe">
-							<h3>Subscribe </h3>
-							<form>
-								<input type="text" placeholder="" required />
-								<input type="submit" value="" />
-							</form>
-							<p>eusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-						</div>
-						<div class="col-md-3 footer-grid explore">
-							<h3>Explore</h3>
-							<ul class="col-md-6">
-								<li><a href="#">Envato</a></li>
-								<li><a href="#">Themecurve</a></li>
-								<li><a href="#">Kreativeshowcase</a></li>
-								<li><a href="#">Freebiescurve</a></li>
-							</ul>
-							<ul class="col-md-6">
-								<li><a href="#">Themeforest</a></li>
-								<li><a href="#">Microsoft</a></li>
-								<li><a href="#">Google</a></li>
-								<li><a href="#">Yahoo</a></li>
-							</ul>
-							<div class="clearfix"> </div>
-						</div>
-						<div class="col-md-3 footer-grid copy-right">
-							<p>Eusmod tempor incididunt ut labore et dolore magna aliqua. ut labore et dolore magna aliqua. </p>
-							<p class="copy">Copyright &copy; 2014 Umbrella . All Rights Reserved | Template by <a href="http://w3layouts.com/" target="_blank">W3layouts</a></p>
-						</div>
-						<div class="clearfix"> </div>
-						<script type="text/javascript">
-							$(document).ready(function() {
-								/*
-								var defaults = {
-						  			containerID: 'toTop', // fading element id
-									containerHoverID: 'toTopHover', // fading element hover id
-									scrollSpeed: 1200,
-									easingType: 'linear' 
-						 		};
-								*/
-								
-								$().UItoTop({ easingType: 'easeOutQuart' });
-								
-							});
-						</script>
-							<a href="#" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
-					</div>
-				</div>
-			</div>
-			<!---//footer----->
-			
-	</body>
+
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
+                    <i class="fa fa-bars"></i>
+                </button>
+                <a class="navbar-brand page-scroll" href="#page-top">
+                    <i class="fa fa-play-circle"></i>  <span class="light">Study</span> Center
+                </a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
+                <ul class="nav navbar-nav">
+                    <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+                    <li class="hidden"><a href="#page-top"></a></li>
+                    <li><a class="page-scroll" href="#news">News &amp; Events</a></li>
+                    <li><a class="page-scroll" href="#studycenter">Activities</a></li>
+                    <li><a class="page-scroll" href="#publication">Publications</a></li>
+                    <li><a class="page-scroll" href="#direction">Reach Us</a></li>
+                    <li><a class="page-scroll" href="#about">About</a></li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <!-- Intro Header -->
+    <header class="intro">
+        <div class="intro-body">
+            <div class="container">
+                <div class="row intro-body-row">
+
+                        <h1 class="brand-heading">Study Centre</h1>
+                        <table> 
+                            <tr>
+                                <td>
+                                    <p class="intro-text">"The self is always limited; The self must cease through awareness of its own limitations, the falseness of its own existence. However deep, wide, and extensive it may become, the self is always limited, and until it is abandoned, the mind can never be free. The mere preception of that fact is the ending of the self, and only then is it possible for that which is the real to come into being.".</p>
+                                </td>
+                                <td style="padding: 2em;">
+                                    <a href="#retreat" class="btn btn-default btn-lg page-scroll"><i class="fa fa-calendar fa-fw"></i> <span class="network-name" >Register</span></a>
+                                </td>
+                            </tr>
+                        </table>
+                        <a href="#about" class="btn btn-circle page-scroll">
+                            <i class="fa fa-angle-double-down animated"></i>
+                        </a>
+
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="aboutus">
+                <h2>An Overview of Krishnamurti’s Life and Work</h2>
+                <p class="abttext">Jiddu Krishnamurti was born on 11 May 1895 in Madanapalle, a small town in south India. He and his brother were adopted in their youth by Dr Annie Besant, then president of the Theosophical Society. Dr Besant and others proclaimed that Krishnamurti was to be a world teacher whose coming the Theosophists had predicted. To prepare the world for this coming, a world-wide organization called the Order of the Star in the East was formed and the young Krishnamurti was made its head.</p>
+                <p class="abttext">In 1929, however, Krishnamurti renounced the role that he was expected to play, dissolved the Order with its huge following, and returned all the money and property that had been donated for this work. From then, for nearly sixty years until his death on 17 February 1986, he travelled throughout the world talking to large audiences and to individuals about the need for a radical change in mankind.</p>
+                <p class="abttext">Krishnamurti is regarded globally as one of the greatest thinkers and religious teachers of all time. He did not expound any philosophy or religion, but rather talked of the things that concern all of us in our everyday lives, of the problems of living in modern society with its violence and corruption, of the individual's search for security and happiness, and the need for mankind to free itself from inner burdens of fear, anger, hurt, and sorrow. He explained with great precision the subtle workings of the human mind, and pointed to the need for bringing to our daily life a deeply meditative and spiritual quality.</p>
+                <p class="abttext">Krishnamurti belonged to no religious organization, sect or country, nor did he subscribe to any school of political or ideological thought. On the contrary, he maintained that these are the very factors that divide human beings and bring about conflict and war. He reminded his listeners again and again that we are all human beings first and not Hindus, Muslims or Christians, that we are like the rest of humanity and are not different from one another. He asked that we tread lightly on this earth without destroying ourselves or the environment. He communicated to his listeners a deep sense of respect for nature. His teachings transcend man-made belief systems, nationalistic sentiment and sectarianism. At the same time, they give new meaning and direction to mankind's search for truth. His teaching, besides being relevant to the modern age, is timeless and universal.</p>
+                <p class="abttext">Krishnamurti spoke not as a guru but as a friend, and his talks and discussions are based not on tradition-based knowledge but on his own insights into the human mind and his vision of the sacred, so he always communicates a sense of freshness and directness although the essence of his message remained unchanged over the years. When he addressed large audiences, people felt that Krishnamurti was talking to each of them personally, addressing his or her particular problem. In his private interviews, he was a compassionate teacher, listening attentively to the man or woman who came to him in sorrow, and encouraging them to heal themselves through their own understanding. Religious scholars found that his words threw new light on traditional concepts. Krishnamurti took on the challenge of modern scientists and psychologists and went with them step by step, discussed their theories and sometimes enabled them to discern the limitations of those theories. Krishnamurti left a large body of literature in the form of public talks, writings, discussions with teachers and students, with scientists and religious figures, conversations with individuals, television and radio interviews, and letters. Many of these have been published as books, and audio and video recordings.</p>
+                <p class="abttext">More information about Krishnamurti’s life can be found in the biographies written by Mary Lutyens and Pupul Jayakar</p>
+        
+                <div align="center"><a href="#studycenter" class="btn btn-circle page-scroll"><i class="fa fa-angle-double-down animated"></i></a></div>
+    </section>
+
+    <!-- Study Section -->
+    <section id="studycenter" class="studycenter">
+            <div class="studycentercol">
+                <h2>The Study Center</h2>
+                
+                <p class="simpletext">The Study Centre, Bangalore at Haridvanam has been created, based on J. Krishnamurti’s vision. The Study Centre provides an atmosphere of reflection and inquiry into a deep study of the Teachings.</p>
+
+                <p class="simpletext">The Study is placed in a quiet side of the Valley, a lush green land of 100 acres. It is located 25 kilometers from Bangalore City and is a veritable oasis of beauty as are other centres of the Krishnamurti Foundation. In it, is a tranquility and silence that is conducive to an inquiring mind. Besides ‘The Study’, there is ‘The Valley School’, which is a day boarding school with 350 students. <iframe align="right" width="560" height="315" src="https://www.youtube.com/embed/kF0eNeuxvQk" frameborder="0" allowfullscreen></iframe> </p>
+
+                <p class="simpletext">The Study is an integral part of the Bangalore Education Centre having close links with the School. It came into existence as a Study Centre after Krishnaji's death in 1986 and now houses a library of books and several well equipped &amp; tastefully designed rooms where one can watch videos, hold serious discussions or simply be quiet. Most of Krishnaji’s audio CDs, VCDs, and DVDs are available in the library and there are regular programmes and dialogues. There is no instructor or schedule. One may spend time in retreat or listening or sitting quietly by oneself. Regular workshops, gatherings, and seminars are arranged throughout the year.</p>
+
+                <p class="simpletext">The city of Bangalore is well connected by road, rail, and air. The climate is salubrious most of the year. The summer temperatures never exceed 37 degrees C, while in winter the mercury rarely dips below 10 degrees C. The average rainfall is 25 inches per year, usually between June and October. Hence one can be at the Study any time of the year. The study provides furnished cottages with attached bath. Food is vegetarian and guests are requested not to smoke or drink on the campus. Guests visiting here need to understand that the place exists only for serious inquiry.</p>
+
+                <p class="simpletext">The Study Centre is a religious place that is set in wilderness. Here one is not coerced to bow down to a guru or sing praise of a guru. There is no mass following and there is no pressure to imitate others. One can come to this place and be “As One Is” and make one’s own discovery of oneself. When one comes to The Study one is not told what to think or what goals to have in one’s life. Here one can explore the issues of daily living in the spirit if inquiry. Here no practices or methods are given to distract one from learning about oneself. One can come to The Study as a day visitor or take a retreat in wilderness and discover a different way of living.</p>
+
+                <p class="simpletext">"Studying means to go deeply into the subtleties of the words used and their contents and seeing the truth in them in relation to daily life." - J.Krishnamurti</p>
+                
+                <p class="simpletext">To learn more about what J. Krishnamurti had to say about the Study Centre follow the following links:</p>
+                
+                <h5>Activities of the Study Centre</h5>
+                <p class="simpletext">The Study frequently conducts workshops and/or informal study sessions for teachers &amp; parents of the school, monthly meetings for the general public and seminars for groups of individuals deeply interested in the teachings. It also organizes annual gatherings with the aim of bringing together people who have a common interest in understanding life's problems in the light of Krishnamurti's teachings. Aside from all this, residents &amp; visitors to the Centre regularly sit down to have dialogues on deeper questions concerning the psychology of human mind, education, the implications of a religious life and the quest for Truth. One of the Centre's primary functions is to help with the dissemination work of Krishnamurti's teachings. This happens mainly through distribution of Krishnamurti's books, sale of a limited number of pre-recorded audio and video tapes, participation in book fairs &amp; exhibitions, and holding of gatherings and public meetings in various towns, cities of Karnataka. There is also a Translation Cell that is actively involved in translating Krishnamurti's English books into the Kannada language. This Cell also brings out a quarterly Kannada newsletter called "Sahapayana" which has articles, quotes and all the latest news &amp; announcements concerning the BEC and KFI.</p>                
+            </div>
+            <div align="center"><a href="#news" class="btn btn-circle page-scroll"><i class="fa fa-angle-double-down animated"></i></a></div>
+    </section>
+    
+    
+    <!-- News Section -->
+    <section id="news" class="news-section">
+        <h2>News - The Study Retreats 2015-2016</h2>
+        <table>
+            <tr>
+                <td class="studycentercol">
+                    <p class="simpletext">The Study Centre, Valley School, Bangalore will be offering residential retreats every month. The purpose of such retreats is to take a step back from ones active daily life of making a living, having a family, and all the other activities that one is engaged in. During the retreat one can be alone and also in company of other serious minded individuals who have deeper questions of life and are willing to delve into the nature of human consciousness without any preconditions or with the aim of reaching any specific goal. Taking a journey within oneself brings about a certain release from the various conclusions, ideas, and tensions that one often accumulates in daily life. After the retreat one returns to daily living with an alert mind that is able to meet afresh the challenges of life.</p>
+
+                    <p class="simpletext">Attending the retreat allows a teacher or parent to learn the intention of the school. The educational philosophy of the school helps in bringing about various policies and curriculum design in the school.</p>
+                    
+                    <span class="retreat-schedule-text-header4">Intention of the Retreat at The Study, KFI, Bangalore</span>
+                    <ul>
+                        <li>Awakening of Intelligence and flowering in goodness</li>
+                        <li>Learning the art of listening and looking</li>
+                        <li>Bringing clarity in oneself </li>
+                        <li>Understanding the workings of one’s mind</li>
+                        <li>Dealing with conflict, change, fear, and desire</li>
+                        <li>Discipline, Freedom, and Responsibility</li>
+                        <li>Discovering beauty, creativity, and Joy</li>
+                        <li>Awareness with all the senses</li>
+                        <li>Exploration into insight</li>
+                        <li>Meditation in daily living</li>
+                    </ul>
+
+                    <p class="simpletext">The retreats start on Thursday evening and end on Sunday evening, so that people who are working have to take only one day off. Transportation will be arranged for group pick-up from Jain Temple, 4th Block, Jayanagar, Bangalore. The time of pick-up will be 6:30 PM on the first day of retreat. The time of departure will be 5:00 PM on the last day of the retreat from the campus. The Study Retreat will be restricted to twelve participants. Each participant will have a single cottage on a non-sharing basis.</p>
+
+
+                    <p class="simpletext">Participants for the group retreats are encouraged to register early for single occupancy cottage accommodation. The suggested contribution for the study retreat to cover the cost of food, lodging, programs, study material, and group transportation is Rs. 3500 (individual) per person. Please fill up the registration form and send it to the Study Centre, Bangalore. Few cottages will be available for double occupancy. The suggested contribution for the study retreat is Rs. 2800 (twin-sharing) per person.</p>
+
+                    <p class="simpletext">Group retreats will be for 12-18 participants (individual/ shared accommodation option). Vegetarian food will be served. Smoking, alcohol or drugs are strictly prohibited.</p>
+
+                    <p class="simpletext">Participants can extend their stay before or after the retreat on the basis of additional payment. We recommend that the participants extend the retreat for one to three days after the group retreat gets over. This will give participants a chance to absorb the questions raised during the retreat, so that the insights can percolate in the deeper layers of consciousness. The transportation for all the programs is arranged for one pickup and drop to the city in a group. The time will be specified to the participants in the acknowledgement email before the event.</p>                    
+                </td>
+                <td valign="top">
+                    <div class="retreat-schedule-text-header1">Scheduled Group Retreats (Paid)</div>
+                    <span>
+                        <table>
+                            <tr class="retreat-schedule-odd"><td class="retreat-schedule-text">June 11-14, 2015: </td><td>Harmony in Relationship</td></tr>
+                            <tr class="retreat-schedule-even"><td class="retreat-schedule-text">July 9-12, 21015: </td><td>Can I be a responsible parent without understanding myself?</td></tr>
+                            <tr class="retreat-schedule-odd"><td class="retreat-schedule-text">Aug 6-9, 2015: </td><td>Significance of “Living in the Here &amp; Now”</td></tr>
+                            <tr class="retreat-schedule-even"><td class="retreat-schedule-text">Sep 10-13, 2015: </td><td>Education and the understanding of life</td></tr>
+                            <tr class="retreat-schedule-odd"><td class="retreat-schedule-text">Oct 8-11, 2015: </td><td>Breaking free from the “prison of the mind”</td></tr>
+                            <tr class="retreat-schedule-even"><td class="retreat-schedule-text">Dec 9-13, 2015: </td><td>**Retreat for Young (18-35) What are you doing with your life?</td></tr>
+                            <tr class="retreat-schedule-odd"><td class="retreat-schedule-text">Jan 7-10, 2016: </td><td>Exploring Worry, Stress &amp; Conflict</td></tr>
+                            <tr class="retreat-schedule-even"><td class="retreat-schedule-text">Feb 11-14, 2016: </td><td>Silence, Stillness, &amp; Meditation</td></tr>
+                            <tr class="retreat-schedule-odd"><td class="retreat-schedule-text">Mar 10-13, 2016: </td><td>Why do I get Angry?</td></tr>
+                            <tr class="retreat-schedule-even"><td class="retreat-schedule-text">April 7-10, 2016: </td><td>Karnataka JK Shibra: Problems of living; What’s my approach?</td></tr>
+                        </table>
+                    </span>
+                    <div class="retreat-schedule-text-header4">Mode of Payment</div>
+                    <ul>
+                        <li>DD drawn in favor of Bangalore Education Centre, KFI payable in Bangalore
+                        <li>Check &quot;payable at par&quot; are also accepted. The checks should be made to Bangalore Education Centre, KFI
+                        <li>Bank Transfer details:
+                            <table>
+                                <tr><td>Bank Name :</td><td>STATE BANK OF MYSORE</td></tr>
+                                <tr><td>Branch :</td><td>Doddakallasandra</td></tr>
+                                <tr><td>A/c Name : </td><td>Bangalore Education Centre, KFI</td></tr>
+                                <tr><td>A/c No. :</td><td>64029015180</td></tr>
+                                <tr><td>IFSC Code :</td><td>SBMY0040653</td></tr>
+                            </table>
+                        </li>
+                    </ul>
+    
+                    <p align="center"><a href="http://kfistudy.org/images/pdfs/RegistrationForm_TheStudy_2015.pdf" class="btn btn-default btn-lg">Retreat Registration Form</a></p>
+    
+                    <div class="retreat-schedule-text-header1">First Sunday Meetings (Free)</div>
+                    <p class="simpletext">Meetings are organized for people interested in Krishnaji’s Teachings living in Bangalore. The meeting is held on First Sunday of every month from 9:30 AM to 1:30 PM at the Valley School campus. The half a day session includes Krishnamurti video session and dialogue. Guest speakers are invited. Free transport and lunch is arranged for all the participants. The session starts with an introduction of a theme either by one of the staff members or a guest followed with Dialogue. After tea break, we watch a video of J.Krishnamurti’s talk.</p>
+                    <p align="center"><a href="http://kfistudy.org/images/pdfs/Bus%20Route.pdf" class="btn btn-default btn-lg">Bus Route</a></p>
+                                        
+                    <p class="simpletext-small">** Participants in Retreat for Young will be staying on a sharing basis in various rooms on the campus.</p>
+                </td>
+            </tr>                      
+        </table>
+            <div align="center"><a href="#direction" class="btn btn-circle page-scroll"><i class="fa fa-angle-double-down animated"></i></a></div>        
+    </section>
+
+
+    <!-- Direction Section -->
+    <section id="direction" class="container content-section">
+        <table>
+            <tr>
+                <td colspan="2" class=" text-center">
+                    <h4>The Study Center</h4>
+                    <p class="simpletext">Valley School campus, 17th Km Kanakpura Rd, Thatguni Post, Bangalore – 560062, India</p>
+                    <p><a href="mailto:kfistudy@gmail.com">kfistudy@gmail.com</a></p>
+                    <ul class="list-inline banner-social-buttons">
+                        <li>
+                            <div class="btn btn-default btn-lg"><i class="fa fa-phone fa-fw"></i> <span class="network-name">+91-80-2843-5243</span></div>
+                        </li>
+                        <li>
+                            <div class="btn btn-default btn-lg"><i class="fa fa-phone fa-fw"></i> <span class="network-name">+91-94826-41389</span></div>
+                        </li>
+                    </ul>
+                    <a href="http://kfistudy.org/images/pdfs/Bus%20Route.pdf"><span class="network-name">First Sunday Meeting: Bus Route</span></a>
+                    <br />
+                    <p><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3889.828982697692!2d77.50775661533382!3d12.854319920917618!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae15ecfad92d41%3A0x119470ffb0203b36!2sThe+Valley+School!5e0!3m2!1sen!2sin!4v1451034936003" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe></p>
+                </td>
+                <td>
+                    <h4>Directions to the Study Centre, Bangalore</h4>
+                    <p class="simpletext">The Study Centre is located on the same campus as The Valley School. Coming on Kanakpura Road go pass the Saraki Signal and then go pass Konankonte Cross (landmark Metro Store). Then pass Talghatpura Police Station and NICE Road (peripheral Road – overhead bridge). Stay on Kanakpura Road. On the left you will see Silk Farm. This is 12 km from Saraki Signal. On the right side near a Banyan tree there is a road that goes on the right side. Here is a sign in yellow for The Valley School. Come straight to the school gate (without making any turns). The school gate is 2km from the Silk Farm. Ask the security for directions for the Study Centre.</p>
+
+                    <h4>Directions from Bangalore Central &amp; Majestic Bus Stand on local buses</h4>
+                    <ul class="list-inline">
+                        <li>
+                            <p class="simpletext">Direct Bus to Silk Farm: 211B and 211F.</p>
+                        </li>
+                        <li>
+                            <p class="simpletext">Take a local bus to Banashankari Bus Stand on Kanakpura Road. This is one of the major bus stands in Bangalore. Take bus # 211, 212,213, 214,216,218. All buses have a,b,c,d at the end of the number. Check with the conductor to make sure that it will come to Silk Farm on Kanakpura Road.</p>
+                        </li>
+                        <li>
+                            <p class="simpletext">Take a local bus to Banashankari Bus Stand on Kanakpura Road. Take Bus no. 212c from Banashankari. This bus comes closest to the gate of Valley school after making a right turn from Silk Farm. Get down before the bus makes right to the Rachanmara village. This is the best option to come to the Valley School campus.</p>
+                        </li>
+                    </ul>
+                    <p class="simpletext">Please check timings of the buses on the internet or the bus stand. If you reach Silk Farm between 9AM and 3PM – you can call the school office number 080.2843.5240 and request a pick-up from the Silk Farm if the driver is available. You can also inform Study Centre office 080.2843.5243 about your arrival.</p>
+                </td>
+            </tr>
+        </table>
+            </div>
+        </div>
+        <div align="center"><a href="#publication" class="btn btn-circle page-scroll"><i class="fa fa-angle-double-down animated"></i></a></div>          
+    </section>    
+
+
+    <!-- Publication Section -->
+    <section id="publication" class="pub-section">
+        <h2>Publications</h2>
+        <table>
+            <tr>
+                <td>
+                    <div class="retreat-schedule-text-header4">Commentaries on Living Second Series</div>
+                    <p  class="simpletext">Title: Baligondu Bhashya 2nd series</p>
+                    <p  class="simpletext">Translator: Dr. Mahabaleshwar Rao</p>
+                    <p  class="simpletext">(300 pages; Price: Rs 150/-) </p>
+                    <p class="simpletext">The "Baligondu Bhashya" series represents an entirely new genre of writing - a blend of lyrical descriptions of nature, philosophical reflections and psychological insights, all informed by a deeply religious sensibility and couched in lucid, absorbing prose. The second book in this series deals with a wide range of topics such as - boredom, conditioning, conformity, desire, fear, karma, the 'I', death, freedom, meditation and "an immensity that was aware of itself without measure". In these dialogues, the ways of the self are unravelled through Krishnamurti's probing intelligence.</p>
+                    <img src="img/pub1.jpg" />
+                </td>
+                <td>
+                    <div class="retreat-schedule-text-header4">Krishnamurti on Education</div>
+                    <p  class="simpletext">Title: Shikshana 2nd Edition</p>
+                    <p  class="simpletext">Translator: Shri S.T. Kashikar</p>
+                    <p  class="simpletext">(158 pages; Price: Rs 90/-)</p>
+                    <p class="simpletext">This book is the outcome of talks and discussions held by J.Krishnamurti with the students and teachers of Rishi Valley School, Andhra Pradesh and Rajghat Besant School, Varanasi. Krishnamurti regards education as of prime significance in the communication of that which is central to the transformation of the human mind and the creation of a new culture. As the topics in these stimulating talks &amp; dialogues reveal, he questions the very roots of our culture so that a comprehensive view on education emerges.</p>
+                    <img src="img/pub2.jpg" />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="retreat-schedule-text-header4">Life Ahead</div>
+                    <p  class="simpletext">Title: Preethi Endarenu?</p>
+                    <p  class="simpletext">Translator: Prof. Nagabhushan Swamy</p>
+                    <p  class="simpletext">Chapters 8-10; 31 pages; Price: Rs 25/-)</p>                    
+                    <p class="simpletext">"Preethi Endarenu?" is a translation of chapters 8-10 of the book "Life Ahead" by J.Krishnamurti. The book covers a wide range of themes - sorrow, misery, social work, economic inequalities, rituals, prayer, pride, vanity, egotism, the art of listening, the importance of understanding the mind and the meaning of love. Education is central to Krishnamurti's vision of life, and Life Ahead is the first collection of his talks to students, teachers and parents.</p>
+                    <img src="img/pub3.jpg" />
+                </td>
+                <td>
+                    <div class="retreat-schedule-text-header4">J.Krishnamurti: Biography</div>
+                    <p  class="simpletext">Title: Jiddu Krishnamurti: Jeevana - Darshana</p>
+                    <p  class="simpletext">Author: Dr.N. Murari Ballal</p>
+                    <p  class="simpletext">(242 pages; Price: Rs 130/-) </p>                    
+                    <p class="simpletext">This is the first ever biography on J.Krishnamurti to be published in the Kannada language. Written with a lot of grace and poetry, it brings out many interesting facts concerning Krishnaji's life as an immensely popular public speaker, educator, philosopher and an extraordinary religious teacher. This was also to be the last book by the well-known economist and environmentalist, the Late Dr.N.Murari Ballal, who not only was a compassionate human being deeply concerned about our environment, but also, an extremely devoted student of Krishnaji's teachings - teachings that point to a reality beyond delusive notions of freedom and psychological entrapments of the ego or self. It will soon become obvious to the reader that this book has been completed with great care, dedication and sensitivity.</p>
+                    <img src="img/pub4.jpg" />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="retreat-schedule-text-header4">Freedom from the Known</div>
+                    <p  class="simpletext">Title: Tilidudellava Bittu</p>
+                    <p  class="simpletext">Translator: Prof.G. Venkatasubbiah</p>
+                    <p  class="simpletext">(136 pages; Price: Rs 90/-) </p>                    
+                    <p class="simpletext">First published in English in 1969 as "Freedom from the known", this popular Krishnamurti book deals with such diverse topics as awareness, conditioning, consciousness, death, fear, freedom, knowledge, God, love &amp; meditation. In this book, the reader will also find a clear explanation of the assertion- "the observer is the observed", which Krishnamurti considered to be the essential core of the teachings.</p>
+                    <img src="img/pub5.jpg" />
+                </td>
+<!--
+                <td>
+                    <div class="retreat-schedule-text-header4"></div>
+                    <p class="simpletext"></p>
+                    <img src="img/pub.jpg" />
+                </td>
+-->
+            </tr>            
+        </table>
+            </div>
+        </div>
+        <div align="center"><a href="#retreat" class="btn btn-circle page-scroll"><i class="fa fa-angle-double-down animated"></i></a></div>   
+    </section>
+
+    <!-- Retreat Sections -->
+    <section id="retreat" class="retreat-section">
+        <span class="retreat-schedule-text-header1">Scheduled Group Retreats 2015 - 2016</span>
+        <table>
+            <tr>
+                <td class="studycentercol">
+                    <p class="simpletext">The Study Centre, Valley School, Bangalore will be offering residential retreats every month. The purpose of such retreats is to take a step back from ones active daily life of making a living, having a family, and all the other activities that one is engaged in. During the retreat one can be alone and also in company of other serious minded individuals who have deeper questions of life and are willing to delve into the nature of human consciousness without any preconditions or with the aim of reaching any specific goal. Taking a journey within oneself brings about a certain release from the various conclusions, ideas, and tensions that one often accumulates in daily life. After the retreat one returns to daily living with an alert mind that is able to meet afresh the challenges of life.</p>
+
+                    <p class="simpletext">Attending the retreat allows a teacher or parent to learn the intention of the school. The educational philosophy of the school helps in bringing about various policies and curriculum design in the school.</p>
+                    
+                     <p class="simpletext">The retreats start on Thursday evening and end on Sunday evening, so that people who are working have to take only one day off. Transportation will be arranged for group pick-up from Jain Temple, 4th Block, Jayanagar, Bangalore. The time of pick-up will be 6:30 PM on the first day of retreat. The time of departure will be 5:00 PM on the last day of the retreat from the campus. The Study Retreat will be restricted to twelve participants. Each participant will have a single cottage on a non-sharing basis.</p>
+
+                    <p class="simpletext">Participants for the group retreats are encouraged to register early for single occupancy cottage accommodation. The suggested contribution for the study retreat to cover the cost of food, lodging, programs, study material, and group transportation is Rs. 3500 (individual) per person. Please fill up the registration form and send it to the Study Centre, Bangalore. Few cottages will be available for double occupancy. The suggested contribution for the study retreat is Rs. 2800 (twin-sharing) per person.</p>
+
+                    <p class="simpletext">Group retreats will be for 12-18 participants (individual or shared accommodation option). Vegetarian food will be served. Smoking, alcohol or drugs are strictly prohibited.</p>
+
+                    <p class="simpletext">Participants can extend their stay before or after the retreat on the basis of additional payment. We recommend that the participants extend the retreat for one to three days after the group retreat gets over. This will give participants a chance to absorb the questions raised during the retreat, so that the insights can percolate in the deeper layers of consciousness. The transportation for all the programs is arranged for one pickup and drop to the city in a group. The time will be specified to the participants in the acknowledgement email before the event.</p>
+                    
+                    <div class="retreat-schedule-text-header4">What to bring when you come on retreat</div>
+                    <p class="simpletext">
+                        <ul>
+                        <li>Flash light</li>
+                        <li>Walking shoes or sandals.</li>
+                        <li>Warm clothes - nights could become chilly.</li>
+                        <li>Umbrella during rainy season</li>
+                        <li>Loose clothes for Body Movement sessions. Avoid Dhoti or Sari. This applies only to participants of the organized Study Retreats or Gatherings. </li>
+                        <li>Mosquito repellent, such as Odomos</li>
+                        </ul>                                            
+                    </p>
+               
+                    
+                    <div class="retreat-schedule-text-header4">Mode of Payment</div>
+                    <ul>
+                        <li>DD drawn in favor of Bangalore Education Centre, KFI payable in Bangalore
+                        <li>Check &quot;payable at par&quot; are also accepted. The checks should be made to Bangalore Education Centre, KFI
+                    </ul>                    
+                </td>
+                <td valign="top">
+                    <div class="retreat-schedule-text-header1">Scheduled Group Retreats (Paid)</div>
+                    <span>
+                        <table class="retreat-schedule-table">
+                            <tr><th>Date</th><th>Theme</th></tr>
+                            <tr><td>June 11-14, 2015 </td><td>Harmony in Relationship</td></tr>
+                            <tr><td>July 9-12, 21015 </td><td>Can I be a responsible parent without understanding myself?</td></tr>
+                            <tr><td>Aug 6-9, 2015 </td><td>Significance of “Living in the Here &amp; Now”</td></tr>
+                            <tr><td>Sep 10-13, 2015 </td><td>Education and the understanding of life</td></tr>
+                            <tr><td>Oct 8-11, 2015 </td><td>Breaking free from the “prison of the mind”</td></tr>
+                            <tr><td>Dec 9-13, 2015 </td><td>**Retreat for Young (18-35) What are you doing with your life?</td></tr>
+                            <tr><td>Jan 7-10, 2016 </td><td>Exploring Worry, Stress &amp; Conflict</td></tr>
+                            <tr><td>Feb 11-14, 2016 </td><td>Silence, Stillness, &amp; Meditation</td></tr>
+                            <tr><td>Mar 10-13, 2016 </td><td>Why do I get Angry?</td></tr>
+                            <tr><td>April 7-10, 2016 </td><td>Karnataka JK Shibra: Problems of living; What’s my approach?</td></tr>                        
+                        </table>
+                        
+                        <p class="simpletext">Bank Transfer details:</p>
+                        <table class="retreat-schedule-table">
+                            <tr><td>Bank Name :</td><td>STATE BANK OF MYSORE</td></tr>
+                            <tr><td>Branch :</td><td>Doddakallasandra</td></tr>
+                            <tr><td>A/c Name : </td><td>Bangalore Education Centre, KFI</td></tr>
+                            <tr><td>A/c No. :</td><td>64029015180</td></tr>
+                            <tr><td>IFSC Code :</td><td>SBMY0040653</td></tr>
+                        </table>                         
+                    </span>
+                    <p align="center"><a href="http://kfistudy.org/images/pdfs/RegistrationForm_TheStudy_2015.pdf" class="btn btn-default btn-lg">Retreat Registration Form</a></p>
+                </td>
+            </tr>                      
+        </table>                   
+    </section>
+
+    <!-- Map Section -->
+    <div id="map"></div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container text-center">
+            <p>Copyright &copy; anoob.backer@gmail.com</p>
+        </div>
+    </footer>
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="js/jquery.easing.min.js"></script>
+
+    <!-- Google Maps API Key - Use your own API key to enable the map feature. More information on the Google Maps API can be found at https://developers.google.com/maps/ -->
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCRngKslUGJTlibkQ3FkfTxj3Xss1UlZDA&sensor=false"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script src="js/grayscale.js"></script>
+
+</body>
+
 </html>
